@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+    body {background-color: powderblue;}
+    h1   {color: blue;}
+    p    {color: red;}
+</style>
+
+<!-- 
+    Alternatively, link to an external CSS file
+    <link rel="stylesheet" href="styles.css">
+-->
+
+<head>
+    <title>Page Title</title>
+</head>
+
+<body>
+    <!-- You can write comments like this -->
+    <h1>This is a Heading</h1>
+    <p>This is a paragraph.</p>
+
+    <ul>
+        <li><a href="#">Something 1</a></li>
+        <li><a href="#">Something 2</a></li>
+        <li><a href="#">Something 3</a></li>
+        <li><a href="#" style="font-size: 30px;" id="time_item">Something 4</a></li>
+    </ul>
+
+    <script>
+        document.getElementById("time_item").innerText = new Date().toLocaleTimeString();
+    </script>
+    
+    <!-- Link to external JavaScript file at the end of body 
+        <script src="script.js"></script>
+    -->
+</body>
+
+</html>
