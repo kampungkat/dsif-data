@@ -22,14 +22,25 @@
     <p>This is a paragraph.</p>
 
     <ul>
-        <li><a href="#">Something 1</a></li>
-        <li><a href="#">Something 2</a></li>
-        <li><a href="#">Something 3</a></li>
-        <li><a href="#" style="font-size: 30px;" id="time_item">Something 4</a></li>
+        <li><a href="#" class="list_item">Something 1</a></li>
+        <li><a href="#" class="list_item">Something 2</a></li>
+        <li><a href="#" class="list_item">Something 3</a></li>
+        <li><a href="#" style="font-size: 30px;" id="time_item" class="list_item">Something 4</a></li>
     </ul>
 
     <script>
-        document.getElementById("time_item").innerText = new Date().toLocaleTimeString();
+        function getTime() {
+            return new Date().toLocaleTimeString();
+        }
+
+        console.log(getTime())
+
+        document.getElementById("time_item").innerText = getTime()
+
+        // const list_items = document.getElementsByClassName("list_item")
+        // for (let i = 0; i < list_items.length; i++) {
+        //     list_items.item(i).innerText = "Overwritten"
+        // }
     </script>
     
     <!-- Link to external JavaScript file at the end of body 
